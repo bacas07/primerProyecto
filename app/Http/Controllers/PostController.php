@@ -35,12 +35,18 @@ class PostController extends Controller
 
     public function edit(string $id)
     {
-        //
+        $post = Post::find($id);      
+
+        return view('post.edit', compact('post'));
     }
 
     public function update(Request $request, string $id)
     {
-        //
+        $post = Post::find($id);
+        
+        $post->update($request->all());
+
+        return redirect(route('post.index'));
     }
 
     public function destroy(string $id)
