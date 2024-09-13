@@ -8,7 +8,7 @@
             <input type="categoty" class="form-control" id="category" name="category">
         </div><br>
         <div>
-            <label for="content" class="form-label">Example textarea</label>
+            <label for="content" class="form-label">Content</label>
             <textarea class="form-control" id="content" rows="3" name="content"></textarea>
         </div><br>
         <div>

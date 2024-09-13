@@ -8,7 +8,7 @@
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="/post/create">Crear nuevo post</a>
+                <a class="nav-link active" aria-current="page" href="{{ route('post.create') }}">Crear nuevo post</a>
               </li>
               {{ $slot }}
             </ul>
