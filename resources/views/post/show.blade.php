@@ -12,7 +12,17 @@
         </ul>
         <div>
             <a href="{{ route('post.edit', $post->id) }}" class="btn btn-primary">Editar</a>
-            <a href="{{ route('post.destroy', $post->id) }}" class="btn btn-danger">Eliminar</a>
+            
+            <form action="{{ route('post.destroy', $post->id) }}" method="POST">
+                
+                @csrf
+
+                @method('delete')
+
+                <button type="submit" class="btn btn-danger">
+                    Eliminar
+                </button>
+            </form>
         </div>
         
     </div>

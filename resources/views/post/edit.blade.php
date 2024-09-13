@@ -3,7 +3,11 @@
     <x-navbar></x-navbar>
 
     <form action="{{ route('post.store') }}" method="POST">
+
         @csrf
+
+        @method('put')
+
         <div class="mb-3">
             <div>
                 <label for="title" class="form-label">Title</label>
