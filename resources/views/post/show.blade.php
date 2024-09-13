@@ -10,6 +10,11 @@
         <ul class="list-group list-group-flush">
             <li class="list-group-item">{{ $post->category }}</li>
         </ul>
+        <div>
+            <a href="{{ route('post.edit', $post->id) }}" class="btn btn-primary">Editar</a>
+            <a href="{{ route('post.destroy', $post->id) }}" class="btn btn-danger">Eliminar</a>
+        </div>
+        
     </div>
 
 </x-layout>
